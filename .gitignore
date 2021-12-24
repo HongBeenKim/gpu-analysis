@@ -1,0 +1,5 @@
+venv/
+cache
+mm_normal
+*.xlsx
+
