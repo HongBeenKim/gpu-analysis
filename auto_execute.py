@@ -12,8 +12,8 @@ for mat_size_in_kb in range(100, 5001, 100):
     data = str(fd_popen.read().strip(), 'utf-8')
     fd_popen.close()
 
-    row = [N * N / 256, data]
+    row = [N, N * N / 256, float(data)]
     ws.append(row)
 
-wb.save('result.xlsx')
+wb.save('result_2kernel.xlsx')
 
