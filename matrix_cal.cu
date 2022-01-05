@@ -14,6 +14,24 @@ __global__ void d_mm_normal(int *A, int *B, int*C, int N)
     }
 }
 
+__global__ void disturb(int *A, int *B, int *C, int N)
+{
+    int row = blockIdx.y * blockDim.y + threadIdx.y;
+    int col = blockIdx.x * blockDim.x + threadIdx.x;
+
+    for (int n = 0; n < 10; n++) {
+        for (int i = col; i < N; i += BLOCK_SIZE * GRID_SIZE) {
+            for (int j = row; j < N; j += BLOCK_SIZE * GRID_SIZE) {
+                int sum = 0;
+                for (int k = 0; k < N; k++) {
+                    sum += A[j * N + k] * B[k * N + i];
+                }
+                C[j * N + i] = sum;
+            }
+        }
+    }
+}
+
 
 __global__ void d_mm_shared_mem(int *A, int *B, int *C, int N)
 {

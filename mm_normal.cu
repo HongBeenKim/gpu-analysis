@@ -66,7 +66,6 @@ int main(int argc, char *argv[]) {
     d_rand_matrix<<<1, 1>>>(seed, d_B3, N);
     cudaDeviceSynchronize();
 */
-
     // record matmul - single kernel 
     cudaEventRecord(start, stream1);
     d_mm_normal<<<dimGrid, dimBlock, 0, stream1>>>(d_A1, d_B1, d_C1, N);
@@ -80,7 +79,7 @@ int main(int argc, char *argv[]) {
  
 
     // Disturbing kernel 
-    d_mm_normal<<<dimGrid, dimBlock, 0, stream2>>>(d_A2, d_B2, d_C2, N);
+    disturb<<<dimGrid, dimBlock, 0, stream2>>>(d_A2, d_B2, d_C2, N);
     // Disturbed kernel 
     cudaEventRecord(start, stream1);
     d_mm_normal<<<dimGrid, dimBlock, 0, stream1>>>(d_A3, d_B3, d_C3, N);
