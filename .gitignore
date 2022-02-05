@@ -1,5 +1,7 @@
 venv/
+bin/
 cache
 mm_normal
 *.xlsx
+*.ncu-rep
 
