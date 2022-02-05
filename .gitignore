@@ -1,5 +1,5 @@
 venv/
-bin/
+**/bin/
 cache
 mm_normal
 *.xlsx
