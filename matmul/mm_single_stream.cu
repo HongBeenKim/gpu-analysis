@@ -1,4 +1,4 @@
-#define GRID_SIZE 32
+#define GRID_SIZE 2
 #define BLOCK_SIZE 32
 
 #include <stdio.h>
@@ -22,8 +22,8 @@ int main(int argc, char *argv[]) {
 
     //float gpu_elapsed_time_ms;
     float elap_time;
-    cudaStream_t stream1;
-    cudaStreamCreateWithFlags(&stream1, cudaStreamNonBlocking);
+    // cudaStream_t stream1;
+    // cudaStreamCreateWithFlags(&stream1, cudaStreamNonBlocking);
 
     // make event
     cudaEvent_t start, stop;
@@ -59,9 +59,9 @@ int main(int argc, char *argv[]) {
     */
 
     // record matmul - single kernel 
-    cudaEventRecord(start, stream1);
-    d_mm_normal<<<dimGrid, dimBlock, 0, stream1>>>(d_A, d_B, d_C, N);
-    cudaEventRecord(stop, stream1);
+    cudaEventRecord(start, 0);
+    disturb<<<dimGrid, dimBlock>>>(d_A, d_B, d_C, N);
+    cudaEventRecord(stop, 0);
     cudaEventSynchronize(stop);
 
     // calculate elapsed time

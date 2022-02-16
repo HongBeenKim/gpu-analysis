@@ -19,7 +19,7 @@ __global__ void disturb(int *A, int *B, int *C, int N)
     int row = blockIdx.y * blockDim.y + threadIdx.y;
     int col = blockIdx.x * blockDim.x + threadIdx.x;
 
-    for (int n = 0; n < 10; n++) {
+    for (int n = 0; n < 5000; n++) {
         for (int i = col; i < N; i += BLOCK_SIZE * GRID_SIZE) {
             for (int j = row; j < N; j += BLOCK_SIZE * GRID_SIZE) {
                 int sum = 0;
