@@ -1,4 +1,4 @@
-#define GRID_SIZE 2
+#define GRID_SIZE 16
 #define BLOCK_SIZE 32
 
 #include <stdio.h>
@@ -60,7 +60,8 @@ int main(int argc, char *argv[]) {
 
     // record matmul - single kernel 
     cudaEventRecord(start, 0);
-    disturb<<<dimGrid, dimBlock>>>(d_A, d_B, d_C, N);
+    for (int i = 0; i < 50; i++)
+        d_mm_normal<<<dimGrid, dimBlock>>>(d_A, d_B, d_C, N);
     cudaEventRecord(stop, 0);
     cudaEventSynchronize(stop);
 

@@ -75,13 +75,13 @@ __device__ inline void BlackScholesBodyGPU(float &CallResult, float &PutResult,
 ////////////////////////////////////////////////////////////////////////////////
 // Process an array of optN options on GPU
 ////////////////////////////////////////////////////////////////////////////////
-__launch_bounds__(128) __global__
-    void BlackScholesGPU(// float2 *__restrict d_CallResult,
+__global__ void BlackScholesGPU(// float2 *__restrict d_CallResult,
                          // float2 *__restrict d_PutResult,
                          // float2 *__restrict d_StockPrice,
                          // float2 *__restrict d_OptionStrike,
                          // float2 *__restrict d_OptionYears, 
                          float *put_d, float *call_d,
+                         int N,
                          float Riskfree,
                          float Volatility/*, int optN*/) {
   ////Thread index
@@ -92,8 +92,8 @@ __launch_bounds__(128) __global__
     const int opt = blockDim.x * blockIdx.x + threadIdx.x;
     float callResult, putResult;
     BlackScholesBodyGPU(callResult, putResult, (float)opt, (float)opt, (float)opt, Riskfree, Volatility);
-    call_d[opt] = callResult;
-    put_d[opt] = putResult;
+    call_d[opt % N] += callResult;
+    put_d[opt % N] += putResult;
 
   // Calculating 2 options per thread to increase ILP (instruction level
   // parallelism)

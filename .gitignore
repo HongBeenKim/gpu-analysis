@@ -1,4 +1,5 @@
 venv/
+experiments/
 **/bin/
 cache
 mm_normal

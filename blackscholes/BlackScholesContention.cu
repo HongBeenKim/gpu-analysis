@@ -88,8 +88,8 @@ int main(int argc, char **argv) {
 
     cudaEventRecord(start, stream1);
     for (int i = 0; i < NUM_ITERATIONS; i++) {
-        BlackScholesGPU<<<14, 128, 0, stream1>>>(put, call, RISKFREE, VOLATILITY);
-        BlackScholesGPU<<<14, 128, 0, stream2>>>(put2, call2, RISKFREE, VOLATILITY);
+        BlackScholesGPU<<<14, 128, 0, stream1>>>(put, call, 100, RISKFREE, VOLATILITY);
+        BlackScholesGPU<<<14, 128, 0, stream2>>>(put2, call2, 100, RISKFREE, VOLATILITY);
     }
     cudaEventRecord(stop, stream1);
     cudaEventSynchronize(stop);

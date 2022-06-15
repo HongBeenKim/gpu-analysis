@@ -142,11 +142,9 @@ int main(int argc, char **argv) {
 
 */
     float *put, *call, elapsed;
-    cudaError_t err;
 
-    setenv("CUDA_VISIBLE_DEVICES", "MIG-9f343ce3-578f-50c5-8c30-a60270358b52", 1);
-    cudaMalloc((void **)&put, sizeof(float) * 1792);
-    cudaMalloc((void **)&call, sizeof(float) * 1792);
+    cudaMalloc((void **)&put, sizeof(float) * 100);
+    cudaMalloc((void **)&call, sizeof(float) * 100);
 
     cudaEvent_t start, stop;
     cudaEventCreate(&start);
@@ -155,15 +153,7 @@ int main(int argc, char **argv) {
     cudaEventRecord(start, 0);
 
     for (int i = 0; i < NUM_ITERATIONS; i++) 
-        BlackScholesGPU<<<14, 128>>>(put, call, RISKFREE, VOLATILITY);
-    err = cudaGetLastError();
-    printf("%s\n", cudaGetErrorString(err));
-
-    setenv("CUDA_VISIBLE_DEVICES", "MIG-9f343ce3-578f-50c5-8c30-a60270358b52", 1);
-    for (int i = 0; i < NUM_ITERATIONS; i++) 
-        BlackScholesGPU<<<14, 128>>>(put, call, RISKFREE, VOLATILITY);
-    err = cudaGetLastError();
-    printf("%s\n", cudaGetErrorString(err));
+        BlackScholesGPU<<<56, 512>>>(put, call, 100, RISKFREE, VOLATILITY);
 
     //for (int i = 0; i < NUM_ITERATIONS; i++) {
     //    BlackScholesGPU<<<14, 128>>>(put, call, RISKFREE, VOLATILITY);
@@ -178,7 +168,7 @@ int main(int argc, char **argv) {
     cudaEventSynchronize(stop);
     cudaEventElapsedTime(&elapsed, start, stop);
 
-    printf("%.2f ms\n", elapsed);
+    // printf("%.2f ms\n", elapsed);
 
     cudaFree(put);
     cudaFree(call);
