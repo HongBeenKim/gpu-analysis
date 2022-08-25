@@ -1,0 +1,273 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ACCESS_ONCE	gdrapi_internal.h	43;"	d
+ACCESS_ONCE	gdrdrv/gdrdrv.c	236;"	d	file:
+COMMONCFLAGS	Makefile	/^COMMONCFLAGS := -O2$/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS := -I $(GDRAPI_INC) -I gdrdrv\/ -D GDRAPI_ARCH=$(GDRAPI_ARCH)$/;"	m
+DEPMOD	gdrdrv/Makefile	/^DEPMOD := \/sbin\/depmod$/;"	m
+DEVNAME	gdrdrv/gdrdrv.c	184;"	d	file:
+GDRAPI_ARCH	Makefile	/^GDRAPI_ARCH ?= $(shell ..\/config_arch)$/;"	m
+GDRAPI_ARM64	gdrconfig.h	7;"	d
+GDRAPI_INC	Makefile	/^GDRAPI_INC := ..\/include$/;"	m
+GDRAPI_POWER	gdrconfig.h	5;"	d
+GDRAPI_X86	gdrconfig.h	9;"	d
+GDRCOPY_MSG_DEBUG	gdrapi.c	/^    GDRCOPY_MSG_DEBUG = 1,$/;"	e	enum:gdrcopy_msg_level	file:
+GDRCOPY_MSG_ERROR	gdrapi.c	/^    GDRCOPY_MSG_ERROR$/;"	e	enum:gdrcopy_msg_level	file:
+GDRCOPY_MSG_INFO	gdrapi.c	/^    GDRCOPY_MSG_INFO,$/;"	e	enum:gdrcopy_msg_level	file:
+GDRCOPY_MSG_WARN	gdrapi.c	/^    GDRCOPY_MSG_WARN,$/;"	e	enum:gdrcopy_msg_level	file:
+GDRDRV_IOCTL	gdrdrv/gdrdrv.h	38;"	d
+GDRDRV_IOC_GET_CB_FLAG	gdrdrv/gdrdrv.h	77;"	d
+GDRDRV_IOC_GET_CB_FLAG_PARAMS	gdrdrv/gdrdrv.h	/^struct GDRDRV_IOC_GET_CB_FLAG_PARAMS$/;"	s
+GDRDRV_IOC_GET_INFO	gdrdrv/gdrdrv.h	95;"	d
+GDRDRV_IOC_GET_INFO_PARAMS	gdrdrv/gdrdrv.h	/^struct GDRDRV_IOC_GET_INFO_PARAMS$/;"	s
+GDRDRV_IOC_GET_VERSION	gdrdrv/gdrdrv.h	106;"	d
+GDRDRV_IOC_GET_VERSION_PARAMS	gdrdrv/gdrdrv.h	/^struct GDRDRV_IOC_GET_VERSION_PARAMS$/;"	s
+GDRDRV_IOC_PIN_BUFFER	gdrdrv/gdrdrv.h	55;"	d
+GDRDRV_IOC_PIN_BUFFER_PARAMS	gdrdrv/gdrdrv.h	/^struct GDRDRV_IOC_PIN_BUFFER_PARAMS$/;"	s
+GDRDRV_IOC_UNPIN_BUFFER	gdrdrv/gdrdrv.h	65;"	d
+GDRDRV_IOC_UNPIN_BUFFER_PARAMS	gdrdrv/gdrdrv.h	/^struct GDRDRV_IOC_UNPIN_BUFFER_PARAMS$/;"	s
+GDRDRV_MAJOR_VERSION	gdrdrv/gdrdrv.h	29;"	d
+GDRDRV_MINOR_VERSION	gdrdrv/gdrdrv.h	30;"	d
+GDRDRV_STRINGIFY	gdrdrv/gdrdrv.h	26;"	d
+GDRDRV_TOSTRING	gdrdrv/gdrdrv.h	27;"	d
+GDRDRV_VERSION	gdrdrv/gdrdrv.h	31;"	d
+GDRDRV_VERSION_STRING	gdrdrv/gdrdrv.c	/^MODULE_VERSION(GDRDRV_VERSION_STRING);$/;"	v
+GDRDRV_VERSION_STRING	gdrdrv/gdrdrv.h	32;"	d
+GDR_MR_CACHING	gdrdrv/gdrdrv.c	/^    enum { GDR_MR_NONE, GDR_MR_WC, GDR_MR_CACHING } cpu_mapping_type;$/;"	e	enum:gdr_mr::__anon1	file:
+GDR_MR_NONE	gdrdrv/gdrdrv.c	/^    enum { GDR_MR_NONE, GDR_MR_WC, GDR_MR_CACHING } cpu_mapping_type;$/;"	e	enum:gdr_mr::__anon1	file:
+GDR_MR_WC	gdrdrv/gdrdrv.c	/^    enum { GDR_MR_NONE, GDR_MR_WC, GDR_MR_CACHING } cpu_mapping_type;$/;"	e	enum:gdr_mr::__anon1	file:
+GPU_PAGE_MASK	gdrdrv/gdrdrv.c	222;"	d	file:
+GPU_PAGE_OFFSET	gdrdrv/gdrdrv.c	221;"	d	file:
+GPU_PAGE_SHIFT	gdrdrv/gdrdrv.c	219;"	d	file:
+GPU_PAGE_SIZE	gdrdrv/gdrdrv.c	220;"	d	file:
+HAVE_UNLOCKED_IOCTL	gdrdrv/gdrdrv.c	51;"	d	file:
+KDIR	gdrdrv/Makefile	/^KDIR := $(MODULES_DIR)\/build$/;"	m
+KVER	gdrdrv/Makefile	/^KVER ?= $(shell uname -r)$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS  := $/;"	m
+LIB	Makefile	/^LIB:=$(LIB_DYNAMIC)$/;"	m
+LIBOBJS	Makefile	/^LIBOBJS := $(LIBSRCS:.c=.o)$/;"	m
+LIBS	Makefile	/^LIBS     := -lpthread -ldl$/;"	m
+LIBSRCS	Makefile	/^LIBSRCS := gdrapi.c$/;"	m
+LIB_BASENAME	Makefile	/^LIB_BASENAME:=libgdrapi.so$/;"	m
+LIB_DYNAMIC	Makefile	/^LIB_DYNAMIC=$(LIB_BASENAME).$(LIB_VER)$/;"	m
+LIB_MAJOR_VER	Makefile	/^LIB_MAJOR_VER ?= $(shell awk '\/\\#define GDR_API_MAJOR_VERSION\/ { print $$3 }' ..\/include\/gdrapi.h | tr -d '\\n')$/;"	m
+LIB_MINOR_VER	Makefile	/^LIB_MINOR_VER ?= $(shell awk '\/\\#define GDR_API_MINOR_VERSION\/ { print $$3 }' ..\/include\/gdrapi.h | tr -d '\\n')$/;"	m
+LIB_SONAME	Makefile	/^LIB_SONAME=$(LIB_BASENAME).$(LIB_MAJOR_VER)$/;"	m
+LIB_VER	Makefile	/^LIB_VER:=$(LIB_MAJOR_VER).$(LIB_MINOR_VER)$/;"	m
+MAX	gdrdrv/gdrdrv.c	225;"	d	file:
+MIN	gdrdrv/gdrdrv.c	229;"	d	file:
+MINIMUM_GDR_API_MAJOR_VERSION	gdrdrv/gdrdrv.h	34;"	d
+MINIMUM_GDR_API_MINOR_VERSION	gdrdrv/gdrdrv.h	35;"	d
+MINIMUM_GDR_API_VERSION	gdrdrv/gdrdrv.h	36;"	d
+MODULES_DIR	gdrdrv/Makefile	/^MODULES_DIR := \/lib\/modules\/$(KVER)$/;"	m
+MODULE_DESTDIR	gdrdrv/Makefile	/^MODULE_DESTDIR := $(MODULES_DIR)\/$(MODULE_SUBDIR)$/;"	m
+MODULE_SUBDIR	gdrdrv/Makefile	/^MODULE_SUBDIR ?= \/kernel\/drivers\/misc\/$/;"	m
+NVIDIA_P2P_MAJOR_VERSION	gdrdrv/gdrdrv.c	157;"	d	file:
+NVIDIA_P2P_MAJOR_VERSION_MASK	gdrdrv/gdrdrv.c	150;"	d	file:
+NVIDIA_P2P_MAJOR_VERSION_MATCHES	gdrdrv/gdrdrv.c	167;"	d	file:
+NVIDIA_P2P_MINOR_VERSION	gdrdrv/gdrdrv.c	162;"	d	file:
+NVIDIA_P2P_MINOR_VERSION_MASK	gdrdrv/gdrdrv.c	153;"	d	file:
+NVIDIA_P2P_PAGE_TABLE_VERSION_COMPATIBLE	gdrdrv/gdrdrv.c	178;"	d	file:
+NVIDIA_P2P_VERSION_COMPATIBLE	gdrdrv/gdrdrv.c	172;"	d	file:
+NVIDIA_SRC_DIR	gdrdrv/Makefile	/^NVIDIA_SRC_DIR ?= $(shell find \/usr\/src\/nvidia-* -name "nv-p2p.h"|head -1|xargs dirname || echo "NVIDIA_DRIVER_MISSING")$/;"	m
+PREFERS_LOAD_UNROLL4	gdrapi.c	393;"	d	file:
+PREFERS_LOAD_UNROLL4	gdrapi.c	406;"	d	file:
+PREFERS_LOAD_UNROLL4	gdrapi.c	419;"	d	file:
+PREFERS_LOAD_UNROLL8	gdrapi.c	394;"	d	file:
+PREFERS_LOAD_UNROLL8	gdrapi.c	407;"	d	file:
+PREFERS_LOAD_UNROLL8	gdrapi.c	420;"	d	file:
+PREFERS_STORE_UNROLL4	gdrapi.c	391;"	d	file:
+PREFERS_STORE_UNROLL4	gdrapi.c	404;"	d	file:
+PREFERS_STORE_UNROLL4	gdrapi.c	417;"	d	file:
+PREFERS_STORE_UNROLL8	gdrapi.c	392;"	d	file:
+PREFERS_STORE_UNROLL8	gdrapi.c	405;"	d	file:
+PREFERS_STORE_UNROLL8	gdrapi.c	418;"	d	file:
+READ_ONCE	gdrdrv/gdrdrv.c	240;"	d	file:
+REL	gdrdrv/Makefile	/^REL := $(subst ., , $(subst -, , $(shell uname -r)))$/;"	m
+REL_MAJOR	gdrdrv/Makefile	/^REL_MAJOR  := $(word 1,$(REL))$/;"	m
+REL_MEDIUM	gdrdrv/Makefile	/^REL_MEDIUM := $(word 2,$(REL))$/;"	m
+REL_MINOR	gdrdrv/Makefile	/^REL_MINOR  := $(word 3,$(REL))$/;"	m
+WRITE_ONCE	gdrapi_internal.h	47;"	d
+__GDRAPI_INTERNAL_H__	gdrapi_internal.h	24;"	d
+__GDR_DRV_H__	gdrdrv/gdrdrv.h	24;"	d
+__gdrdrv_pin_buffer	gdrdrv/gdrdrv.c	/^static int __gdrdrv_pin_buffer(gdr_info_t *info, u64 addr, u64 size, u64 p2p_token, u32 va_space, gdr_hnd_t *p_handle)$/;"	f	file:
+__gdrdrv_unpin_buffer	gdrdrv/gdrdrv.c	/^static int __gdrdrv_unpin_buffer(gdr_info_t *info, gdr_hnd_t handle)$/;"	f	file:
+addr	gdrdrv/gdrdrv.h	/^    __u64 addr;$/;"	m	struct:GDRDRV_IOC_PIN_BUFFER_PARAMS
+address_space_init_once	gdrdrv/gdrdrv.c	/^void address_space_init_once(struct address_space *mapping)$/;"	f
+bit_AVX2	gdrapi.c	380;"	d	file:
+cb_flag	gdrdrv/gdrdrv.c	/^    int cb_flag;$/;"	m	struct:gdr_mr	file:
+cpu_mapping_type	gdrdrv/gdrdrv.c	/^    enum { GDR_MR_NONE, GDR_MR_WC, GDR_MR_CACHING } cpu_mapping_type;$/;"	m	struct:gdr_mr	typeref:enum:gdr_mr::__anon1	file:
+dbg_enabled	gdrdrv/gdrdrv.c	/^static int dbg_enabled = 0;$/;"	v	file:
+entries	gdrapi_internal.h	/^    LIST_ENTRY(gdr_memh_t) entries;$/;"	m	struct:gdr_memh_t
+fd	gdrapi_internal.h	/^    int fd;$/;"	m	struct:gdr
+flag	gdrdrv/gdrdrv.h	/^    __u32 flag;$/;"	m	struct:GDRDRV_IOC_GET_CB_FLAG_PARAMS
+from_memh	gdrapi.c	/^static gdr_mh_t from_memh(gdr_memh_t *memh) {$/;"	f	file:
+gdr	gdrapi_internal.h	/^struct gdr {$/;"	s
+gdr_close	gdrapi.c	/^int gdr_close(gdr_t g)$/;"	f
+gdr_copy_from_mapping	gdrapi.c	/^int gdr_copy_from_mapping(gdr_mh_t handle, void *h_ptr, const void *map_d_ptr, size_t size)$/;"	f
+gdr_copy_from_mapping_internal	gdrapi.c	/^static int gdr_copy_from_mapping_internal(void *h_ptr, const void *map_d_ptr, size_t size, int wc_mapping)$/;"	f	file:
+gdr_copy_to_mapping	gdrapi.c	/^int gdr_copy_to_mapping(gdr_mh_t handle, void *map_d_ptr, const void *h_ptr, size_t size)$/;"	f
+gdr_copy_to_mapping_internal	gdrapi.c	/^static int gdr_copy_to_mapping_internal(void *map_d_ptr, const void *h_ptr, size_t size, int wc_mapping)$/;"	f	file:
+gdr_dbg	gdrapi.c	85;"	d	file:
+gdr_dbg	gdrdrv/gdrdrv.c	190;"	d	file:
+gdr_dbgc	gdrapi.c	86;"	d	file:
+gdr_driver_get_version	gdrapi.c	/^int gdr_driver_get_version(gdr_t g, int *major, int *minor)$/;"	f
+gdr_enable_logging	gdrapi.c	/^static int gdr_enable_logging = -1;$/;"	v	file:
+gdr_err	gdrapi.c	89;"	d	file:
+gdr_err	gdrdrv/gdrdrv.c	203;"	d	file:
+gdr_free_mr_unlocked	gdrdrv/gdrdrv.c	/^static void gdr_free_mr_unlocked(gdr_mr_t *mr)$/;"	f	file:
+gdr_generate_mr_handle	gdrdrv/gdrdrv.c	/^static inline int gdr_generate_mr_handle(gdr_info_t *info, gdr_mr_t *mr)$/;"	f	file:
+gdr_get_callback_flag	gdrapi.c	/^int gdr_get_callback_flag(gdr_t g, gdr_mh_t handle, int *flag)$/;"	f
+gdr_get_info	gdrapi.c	/^int gdr_get_info(gdr_t g, gdr_mh_t handle, gdr_info_t *info)$/;"	f
+gdr_get_mr_from_handle	gdrdrv/gdrdrv.c	/^static inline gdr_mr_t *gdr_get_mr_from_handle(gdr_info_t *info, gdr_hnd_t handle, int write)$/;"	f	file:
+gdr_get_mr_from_handle_read	gdrdrv/gdrdrv.c	519;"	d	file:
+gdr_get_mr_from_handle_write	gdrdrv/gdrdrv.c	520;"	d	file:
+gdr_hnd_t	gdrdrv/gdrdrv.h	/^typedef __u64 gdr_hnd_t;$/;"	t
+gdr_info	gdrapi.c	87;"	d	file:
+gdr_info	gdrdrv/gdrdrv.c	/^struct gdr_info {$/;"	s	file:
+gdr_info	gdrdrv/gdrdrv.c	197;"	d	file:
+gdr_info_t	gdrdrv/gdrdrv.c	/^typedef struct gdr_info gdr_info_t;$/;"	t	typeref:struct:gdr_info	file:
+gdr_init_cpu_flags	gdrapi.c	/^static void gdr_init_cpu_flags(void)$/;"	f	file:
+gdr_map	gdrapi.c	/^int gdr_map(gdr_t g, gdr_mh_t handle, void **ptr_va, size_t size)$/;"	f
+gdr_memh_t	gdrapi_internal.h	/^typedef struct gdr_memh_t { $/;"	s
+gdr_memh_t	gdrapi_internal.h	/^} gdr_memh_t;$/;"	t	typeref:struct:gdr_memh_t
+gdr_mr	gdrdrv/gdrdrv.c	/^struct gdr_mr {$/;"	s	file:
+gdr_mr_destroy_all_mappings	gdrdrv/gdrdrv.c	/^static void gdr_mr_destroy_all_mappings(gdr_mr_t *mr)$/;"	f	file:
+gdr_mr_from_handle_unlocked	gdrdrv/gdrdrv.c	/^static gdr_mr_t *gdr_mr_from_handle_unlocked(gdr_info_t *info, gdr_hnd_t handle)$/;"	f	file:
+gdr_mr_is_mapped	gdrdrv/gdrdrv.c	/^static int gdr_mr_is_mapped(gdr_mr_t *mr)$/;"	f	file:
+gdr_mr_is_wc_mapping	gdrdrv/gdrdrv.c	/^static int gdr_mr_is_wc_mapping(gdr_mr_t *mr)$/;"	f	file:
+gdr_mr_t	gdrdrv/gdrdrv.c	/^typedef struct gdr_mr gdr_mr_t;$/;"	t	typeref:struct:gdr_mr	file:
+gdr_msg	gdrapi.c	/^static void gdr_msg(enum gdrcopy_msg_level lvl, const char* fmt, ...)$/;"	f	file:
+gdr_msg	gdrdrv/gdrdrv.c	186;"	d	file:
+gdr_msg_level	gdrapi.c	/^static int gdr_msg_level = GDRCOPY_MSG_ERROR;$/;"	v	file:
+gdr_open	gdrapi.c	/^gdr_t gdr_open(void)$/;"	f
+gdr_pfn_is_ram	gdrdrv/gdrdrv.c	/^static inline int gdr_pfn_is_ram(unsigned long pfn)$/;"	f	file:
+gdr_pin_buffer	gdrapi.c	/^int gdr_pin_buffer(gdr_t g, unsigned long addr, size_t size, uint64_t p2p_token, uint32_t va_space, gdr_mh_t *handle)$/;"	f
+gdr_put_mr	gdrdrv/gdrdrv.c	/^static inline void gdr_put_mr(gdr_mr_t *mr, int write)$/;"	f	file:
+gdr_put_mr_read	gdrdrv/gdrdrv.c	536;"	d	file:
+gdr_put_mr_write	gdrdrv/gdrdrv.c	537;"	d	file:
+gdr_runtime_get_version	gdrapi.c	/^void gdr_runtime_get_version(int *major, int *minor)$/;"	f
+gdr_unmap	gdrapi.c	/^int gdr_unmap(gdr_t g, gdr_mh_t handle, void *va, size_t size)$/;"	f
+gdr_unpin_buffer	gdrapi.c	/^int gdr_unpin_buffer(gdr_t g, gdr_mh_t handle)$/;"	f
+gdr_warn	gdrapi.c	88;"	d	file:
+gdrcopy_msg_level	gdrapi.c	/^enum gdrcopy_msg_level {$/;"	g	file:
+gdrdrv_check_same_process	gdrdrv/gdrdrv.c	/^static int gdrdrv_check_same_process(gdr_info_t *info, struct task_struct *tsk)$/;"	f	file:
+gdrdrv_cleanup	gdrdrv/gdrdrv.c	/^module_exit(gdrdrv_cleanup);$/;"	v
+gdrdrv_cleanup	gdrdrv/gdrdrv.c	/^static void __exit gdrdrv_cleanup(void)$/;"	f	file:
+gdrdrv_cpu_can_cache_gpu_mappings	gdrdrv/gdrdrv.c	/^static int gdrdrv_cpu_can_cache_gpu_mappings = 0;$/;"	v	file:
+gdrdrv_fops	gdrdrv/gdrdrv.c	/^struct file_operations gdrdrv_fops = {$/;"	v	typeref:struct:file_operations
+gdrdrv_get_cb_flag	gdrdrv/gdrdrv.c	/^static int gdrdrv_get_cb_flag(gdr_info_t *info, void __user *_params)$/;"	f	file:
+gdrdrv_get_info	gdrdrv/gdrdrv.c	/^static int gdrdrv_get_info(gdr_info_t *info, void __user *_params)$/;"	f	file:
+gdrdrv_get_pages_free_callback	gdrdrv/gdrdrv.c	/^static void gdrdrv_get_pages_free_callback(void *data)$/;"	f	file:
+gdrdrv_get_version	gdrdrv/gdrdrv.c	/^static int gdrdrv_get_version(gdr_info_t *info, void __user *_params)$/;"	f	file:
+gdrdrv_handle_from_off	gdrdrv/gdrdrv.c	/^static gdr_hnd_t gdrdrv_handle_from_off(unsigned long off)$/;"	f	file:
+gdrdrv_init	gdrdrv/gdrdrv.c	/^module_init(gdrdrv_init);$/;"	v
+gdrdrv_init	gdrdrv/gdrdrv.c	/^static int __init gdrdrv_init(void)$/;"	f	file:
+gdrdrv_ioctl	gdrdrv/gdrdrv.c	/^static int gdrdrv_ioctl(struct inode *inode, struct file *filp, unsigned int cmd, unsigned long arg)$/;"	f	file:
+gdrdrv_major	gdrdrv/gdrdrv.c	/^static int gdrdrv_major = 0;$/;"	v	file:
+gdrdrv_mmap	gdrdrv/gdrdrv.c	/^static int gdrdrv_mmap(struct file *filp, struct vm_area_struct *vma)$/;"	f	file:
+gdrdrv_open	gdrdrv/gdrdrv.c	/^static int gdrdrv_open(struct inode *inode, struct file *filp)$/;"	f	file:
+gdrdrv_pin_buffer	gdrdrv/gdrdrv.c	/^static int gdrdrv_pin_buffer(gdr_info_t *info, void __user *_params)$/;"	f	file:
+gdrdrv_release	gdrdrv/gdrdrv.c	/^static int gdrdrv_release(struct inode *inode, struct file *filp)$/;"	f	file:
+gdrdrv_remap_gpu_mem	gdrdrv/gdrdrv.c	/^static int gdrdrv_remap_gpu_mem(struct vm_area_struct *vma, unsigned long vaddr, unsigned long paddr, size_t size, int is_wcomb)$/;"	f	file:
+gdrdrv_unlocked_ioctl	gdrdrv/gdrdrv.c	/^static long gdrdrv_unlocked_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)$/;"	f	file:
+gdrdrv_unpin_buffer	gdrdrv/gdrdrv.c	/^static int gdrdrv_unpin_buffer(gdr_info_t *info, void __user *_params)$/;"	f	file:
+gdrdrv_version	gdrdrv/gdrdrv.h	/^    __u32 gdrdrv_version;$/;"	m	struct:GDRDRV_IOC_GET_VERSION_PARAMS
+gdrdrv_vm_ops	gdrdrv/gdrdrv.c	/^static const struct vm_operations_struct gdrdrv_vm_ops = {$/;"	v	typeref:struct:vm_operations_struct	file:
+gdrdrv_vma_close	gdrdrv/gdrdrv.c	/^void gdrdrv_vma_close(struct vm_area_struct *vma)$/;"	f
+gdrdrv_zap_vma	gdrdrv/gdrdrv.c	/^static inline void gdrdrv_zap_vma(struct address_space *mapping, struct vm_area_struct *vma)$/;"	f	file:
+get_tsc_khz	gdrdrv/gdrdrv.c	112;"	d	file:
+get_tsc_khz	gdrdrv/gdrdrv.c	97;"	d	file:
+handle	gdrapi_internal.h	/^    uint32_t handle;$/;"	m	struct:gdr_memh_t
+handle	gdrdrv/gdrdrv.c	/^    gdr_hnd_t handle;$/;"	m	struct:gdr_mr	file:
+handle	gdrdrv/gdrdrv.h	/^    gdr_hnd_t handle;$/;"	m	struct:GDRDRV_IOC_GET_CB_FLAG_PARAMS
+handle	gdrdrv/gdrdrv.h	/^    gdr_hnd_t handle;$/;"	m	struct:GDRDRV_IOC_GET_INFO_PARAMS
+handle	gdrdrv/gdrdrv.h	/^    gdr_hnd_t handle;$/;"	m	struct:GDRDRV_IOC_PIN_BUFFER_PARAMS
+handle	gdrdrv/gdrdrv.h	/^    gdr_hnd_t handle;$/;"	m	struct:GDRDRV_IOC_UNPIN_BUFFER_PARAMS
+has_avx	gdrapi.c	/^static int has_avx = 0;$/;"	v	file:
+has_avx2	gdrapi.c	/^static int has_avx2 = 0;$/;"	v	file:
+has_sse	gdrapi.c	/^static int has_sse = 0;$/;"	v	file:
+has_sse2	gdrapi.c	/^static int has_sse2 = 0;$/;"	v	file:
+has_sse4_1	gdrapi.c	/^static int has_sse4_1 = 0;$/;"	v	file:
+info_enabled	gdrdrv/gdrdrv.c	/^static int info_enabled = 0;$/;"	v	file:
+is_aligned	gdrapi.c	/^static inline int is_aligned(unsigned long value, unsigned powof2)$/;"	f	file:
+kver_major	gdrdrv/Makefile	/^kver_major:=$(shell echo $(KERNELRELEASE) | awk -F '.' '\/\/ { print $$2;}' )$/;"	m
+length	gdrdrv/gdrdrv.c	/^    u64 length;$/;"	m	struct:gdr_mr	file:
+lock	gdrdrv/gdrdrv.c	/^    struct mutex            lock;$/;"	m	struct:gdr_info	typeref:struct:gdr_info::mutex	file:
+mapped	gdrapi_internal.h	/^    unsigned mapped:1;$/;"	m	struct:gdr_memh_t
+mapped	gdrdrv/gdrdrv.h	/^    __u32 mapped;$/;"	m	struct:GDRDRV_IOC_GET_INFO_PARAMS
+mapped_size	gdrdrv/gdrdrv.c	/^    u64 mapped_size;$/;"	m	struct:gdr_mr	file:
+mapped_size	gdrdrv/gdrdrv.h	/^    __u64 mapped_size;$/;"	m	struct:GDRDRV_IOC_GET_INFO_PARAMS
+mapping	gdrdrv/gdrdrv.c	/^    struct address_space    mapping;$/;"	m	struct:gdr_info	typeref:struct:gdr_info::address_space	file:
+mapping	gdrdrv/gdrdrv.c	/^    struct address_space *mapping;$/;"	m	struct:gdr_mr	typeref:struct:gdr_mr::address_space	file:
+memcpy_cached_store_avx	gdrapi.c	/^static int memcpy_cached_store_avx(void *dest, const void *src, size_t n_bytes)  { return 1; }$/;"	f	file:
+memcpy_cached_store_avx	memcpy_avx.c	/^int memcpy_cached_store_avx(void *dest, const void *src, size_t n_bytes)$/;"	f
+memcpy_cached_store_sse	gdrapi.c	/^static int memcpy_cached_store_sse(void *dest, const void *src, size_t n_bytes)    { return 1; }$/;"	f	file:
+memcpy_cached_store_sse	memcpy_sse.c	/^int memcpy_cached_store_sse(void *dest, const void *src, size_t n_bytes)$/;"	f
+memcpy_uncached_load_sse41	gdrapi.c	/^static int memcpy_uncached_load_sse41(void *dest, const void *src, size_t n_bytes) { return 1; }$/;"	f	file:
+memcpy_uncached_load_sse41	memcpy_sse41.c	/^int memcpy_uncached_load_sse41(void *dest, const void *src, size_t n_bytes)$/;"	f
+memcpy_uncached_store_avx	gdrapi.c	/^static int memcpy_uncached_store_avx(void *dest, const void *src, size_t n_bytes)  { return 1; }$/;"	f	file:
+memcpy_uncached_store_avx	memcpy_avx.c	/^int memcpy_uncached_store_avx(void *dest, const void *src, size_t n_bytes)$/;"	f
+memcpy_uncached_store_sse	gdrapi.c	/^static int memcpy_uncached_store_sse(void *dest, const void *src, size_t n_bytes)    { return 1; }$/;"	f	file:
+memcpy_uncached_store_sse	memcpy_sse.c	/^int memcpy_uncached_store_sse(void *dest, const void *src, size_t n_bytes)$/;"	f
+memhs	gdrapi_internal.h	/^    LIST_HEAD(memh_list, gdr_memh_t) memhs;$/;"	m	struct:gdr
+min	memcpy_avx.c	29;"	d	file:
+min	memcpy_sse.c	29;"	d	file:
+min	memcpy_sse41.c	29;"	d	file:
+minimum_gdr_api_version	gdrdrv/gdrdrv.h	/^    __u32 minimum_gdr_api_version;$/;"	m	struct:GDRDRV_IOC_GET_VERSION_PARAMS
+mr_list	gdrdrv/gdrdrv.c	/^    struct list_head        mr_list;$/;"	m	struct:gdr_info	typeref:struct:gdr_info::list_head	file:
+next_handle	gdrdrv/gdrdrv.c	/^    gdr_hnd_t               next_handle;$/;"	m	struct:gdr_info	file:
+next_handle_overflow	gdrdrv/gdrdrv.c	/^    int                     next_handle_overflow;$/;"	m	struct:gdr_info	file:
+node	gdrdrv/gdrdrv.c	/^    struct list_head node;$/;"	m	struct:gdr_mr	typeref:struct:gdr_mr::list_head	file:
+nv_p2p_dummy_cleanup	gdrdrv/nv-p2p-dummy.c	/^module_exit(nv_p2p_dummy_cleanup);$/;"	v
+nv_p2p_dummy_cleanup	gdrdrv/nv-p2p-dummy.c	/^static void __exit nv_p2p_dummy_cleanup(void)$/;"	f	file:
+nv_p2p_dummy_init	gdrdrv/nv-p2p-dummy.c	/^module_init(nv_p2p_dummy_init);$/;"	v
+nv_p2p_dummy_init	gdrdrv/nv-p2p-dummy.c	/^static int __init nv_p2p_dummy_init(void)$/;"	f	file:
+nvidia_p2p_destroy_mapping	gdrdrv/nv-p2p-dummy.c	/^EXPORT_SYMBOL(nvidia_p2p_destroy_mapping);$/;"	v
+nvidia_p2p_destroy_mapping	gdrdrv/nv-p2p-dummy.c	/^int nvidia_p2p_destroy_mapping(uint64_t p2p_token)$/;"	f
+nvidia_p2p_free_page_table	gdrdrv/nv-p2p-dummy.c	/^EXPORT_SYMBOL(nvidia_p2p_free_page_table);$/;"	v
+nvidia_p2p_free_page_table	gdrdrv/nv-p2p-dummy.c	/^int nvidia_p2p_free_page_table(struct nvidia_p2p_page_table *page_table)$/;"	f
+nvidia_p2p_get_pages	gdrdrv/nv-p2p-dummy.c	/^EXPORT_SYMBOL(nvidia_p2p_get_pages);$/;"	v
+nvidia_p2p_get_pages	gdrdrv/nv-p2p-dummy.c	/^int nvidia_p2p_get_pages(uint64_t p2p_token, uint32_t va_space,$/;"	f
+nvidia_p2p_init_mapping	gdrdrv/nv-p2p-dummy.c	/^EXPORT_SYMBOL(nvidia_p2p_init_mapping);$/;"	v
+nvidia_p2p_init_mapping	gdrdrv/nv-p2p-dummy.c	/^int nvidia_p2p_init_mapping(uint64_t p2p_token,$/;"	f
+nvidia_p2p_put_pages	gdrdrv/nv-p2p-dummy.c	/^EXPORT_SYMBOL(nvidia_p2p_put_pages);$/;"	v
+nvidia_p2p_put_pages	gdrdrv/nv-p2p-dummy.c	/^int nvidia_p2p_put_pages(uint64_t p2p_token, uint32_t va_space,$/;"	f
+obj-m	gdrdrv/Makefile	/^obj-m := nv-p2p-dummy.o$/;"	m
+offset	gdrdrv/gdrdrv.c	/^    u64 offset;$/;"	m	struct:gdr_mr	file:
+p2p_token	gdrdrv/gdrdrv.c	/^    u64 p2p_token;$/;"	m	struct:gdr_mr	file:
+p2p_token	gdrdrv/gdrdrv.h	/^    __u64 p2p_token;$/;"	m	struct:GDRDRV_IOC_PIN_BUFFER_PARAMS
+page_mask	gdrapi_internal.h	/^    size_t page_mask;$/;"	m	struct:gdr
+page_shift	gdrapi_internal.h	/^    uint8_t page_shift;$/;"	m	struct:gdr
+page_size	gdrapi_internal.h	/^    size_t page_size;$/;"	m	struct:gdr
+page_size	gdrdrv/gdrdrv.c	/^    u32 page_size;$/;"	m	struct:gdr_mr	file:
+page_size	gdrdrv/gdrdrv.h	/^    __u32 page_size;$/;"	m	struct:GDRDRV_IOC_GET_INFO_PARAMS
+page_table	gdrdrv/gdrdrv.c	/^    nvidia_p2p_page_table_t *page_table;$/;"	m	struct:gdr_mr	file:
+pgprot_modify_writecombine	gdrdrv/gdrdrv.c	/^static inline pgprot_t pgprot_modify_writecombine(pgprot_t old_prot)$/;"	f	file:
+ptr_is_aligned	gdrapi.c	/^static inline int ptr_is_aligned(const void *ptr, unsigned powof2)$/;"	f	file:
+sem	gdrdrv/gdrdrv.c	/^    struct rw_semaphore sem;$/;"	m	struct:gdr_mr	typeref:struct:gdr_mr::rw_semaphore	file:
+size	gdrdrv/gdrdrv.h	/^    __u64 size;$/;"	m	struct:GDRDRV_IOC_PIN_BUFFER_PARAMS
+tgid	gdrdrv/gdrdrv.c	/^    struct pid             *tgid;$/;"	m	struct:gdr_info	typeref:struct:gdr_info::pid	file:
+tm_cycles	gdrdrv/gdrdrv.c	/^    cycles_t tm_cycles;$/;"	m	struct:gdr_mr	file:
+tm_cycles	gdrdrv/gdrdrv.h	/^    __u64 tm_cycles;$/;"	m	struct:GDRDRV_IOC_GET_INFO_PARAMS
+to_memh	gdrapi.c	/^static gdr_memh_t *to_memh(gdr_mh_t mh) {$/;"	f	file:
+tsc_khz	gdrdrv/gdrdrv.c	/^    unsigned int tsc_khz;$/;"	m	struct:gdr_mr	file:
+tsc_khz	gdrdrv/gdrdrv.h	/^    __u32 tsc_khz;$/;"	m	struct:GDRDRV_IOC_GET_INFO_PARAMS
+unlikely	gdrapi_internal.h	36;"	d
+unlikely	gdrapi_internal.h	38;"	d
+unroll4_memcpy	gdrapi.c	/^static void unroll4_memcpy(void *dst, const void *src, size_t size)$/;"	f	file:
+unroll8_memcpy	gdrapi.c	/^static void unroll8_memcpy(void *dst, const void *src, size_t size)$/;"	f	file:
+va	gdrdrv/gdrdrv.c	/^    u64 va;$/;"	m	struct:gdr_mr	file:
+va	gdrdrv/gdrdrv.h	/^    __u64 va;$/;"	m	struct:GDRDRV_IOC_GET_INFO_PARAMS
+va_space	gdrdrv/gdrdrv.c	/^    u32 va_space;$/;"	m	struct:gdr_mr	file:
+va_space	gdrdrv/gdrdrv.h	/^    __u32 va_space;$/;"	m	struct:GDRDRV_IOC_PIN_BUFFER_PARAMS
+vma	gdrdrv/gdrdrv.c	/^    struct vm_area_struct *vma;$/;"	m	struct:gdr_mr	typeref:struct:gdr_mr::vm_area_struct	file:
+wc_mapping	gdrapi_internal.h	/^    unsigned wc_mapping:1;$/;"	m	struct:gdr_memh_t
+wc_mapping	gdrdrv/gdrdrv.h	/^    __u32 wc_mapping;$/;"	m	struct:GDRDRV_IOC_GET_INFO_PARAMS
+wc_store_fence	gdrapi.c	/^static inline void wc_store_fence(void) { _mm_sfence(); }$/;"	f	file:
+wc_store_fence	gdrapi.c	/^static inline void wc_store_fence(void) { asm volatile("DMB ishld") ; }$/;"	f	file:
+wc_store_fence	gdrapi.c	/^static inline void wc_store_fence(void) { asm volatile("sync") ; }$/;"	f	file:
