@@ -1,0 +1,1 @@
+cmd_/home/dtb05045/gpu-analysis/mig-channel/drv/mig_channel.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000  --build-id  -T ./scripts/module-common.lds -o /home/dtb05045/gpu-analysis/mig-channel/drv/mig_channel.ko /home/dtb05045/gpu-analysis/mig-channel/drv/mig_channel.o /home/dtb05045/gpu-analysis/mig-channel/drv/mig_channel.mod.o;  true

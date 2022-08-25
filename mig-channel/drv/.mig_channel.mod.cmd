@@ -1,0 +1,1 @@
+cmd_/home/dtb05045/gpu-analysis/mig-channel/drv/mig_channel.mod := { echo  /home/dtb05045/gpu-analysis/mig-channel/drv/mig_channel.o;  echo; } > /home/dtb05045/gpu-analysis/mig-channel/drv/mig_channel.mod
