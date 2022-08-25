@@ -253,7 +253,8 @@ int main(int argc, char *argv[])
 
         *((uint8_t *)buf_ptr) = 0xab;
 
-        for (int i = 0; i < 32; i++) {
+        // Read memory area from cpu 
+        for (int i = 0; i < 1024; i++) {
           printf("cpu, base+[%d]: %u\n", i, *((unsigned char *)buf_ptr + i));
         }
 
@@ -263,23 +264,19 @@ int main(int argc, char *argv[])
         );
         cout << "cudaHostRegister res: " << res << endl; 
 
-        printf("value at cpu: %x\n", *((uint8_t *)buf_ptr));
-
-        // Get Device pointer
+        // Get Device pointer - Not actually necessary 
+        /*
         CUdeviceptr ptr;
         res = cuMemHostGetDevicePointer (&ptr, buf_ptr, 0);
         cout << "cuMemHostGetDevicePointer res: " << res <<  endl; 
         printf("devPtr: 0x%llx\n", ptr);
+        */
 
-        // Lauhcn kernel here 
+        // Lauhcn kernel 
         void *args[] = { &buf_ptr, &size };
         cudaError_t err = cudaLaunchKernel((void*)touch, 1, 1, args, 0, NULL);
         cout << "err: " << err << endl;
         cudaDeviceSynchronize();
-
-        for (int i = 0; i < 32; i++) {
-          printf("cpu, base+[%d]: %u\n", i, *((unsigned char *)buf_ptr + i));
-        }
 
         cout << "unmapping buffer" << endl;
         ASSERT_EQ(gdr_unmap(g, mh, buf_ptr, size), 0);
